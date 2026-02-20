@@ -10,28 +10,28 @@ Institutional Repository Vs OpenAIRE py (IRVOApy) is a Python3 script to collect
 - output XLSX file with summary tables and graphs
 
 ## Project Structure
-IRVOApy/
-│
-├── functions/                  # Python libraries
-│   ├── \__init__.py            # Builds package
-│   ├── analysis.py             # Builds XLSX file
-│   ├── api_funs.py             # Connects to OpenAIRE APIs using requests
-│   ├── comparing.py            # Dataset comparison
-│   ├── csv_funs.py             # Extract datasets from input CSV files
-│   ├── json_funs.py            # Read/write JSON files in output folder (debugging)
-│   ├── normalization.py        # Dataset normalization functions
-│   └── pub_funs.py             # Dataset extraction functions
-│
-├── input/                      # Input CSV files
-│   ├── AL_placeholder.csv      # Author List CSV file structure
-│   └── PfIR_placeholder.csv    # Products from Institutional Repository CSV file structure
-│
-├── output/                     # Output XLSX files
-├── AUTHORS.md                  # Contributors and roles
-├── config.py                   # Global variables
-├── LICENCE.md                  # License information
-├── main.py                     # Executable Python script
-└── README.md                   # Project overview
+    IRVOApy/
+    │
+    ├── functions/                  # Python libraries
+    │   ├── \__init__.py            # Builds package
+    │   ├── analysis.py             # Builds XLSX file
+    │   ├── api_funs.py             # Connects to OpenAIRE APIs using requests
+    │   ├── comparing.py            # Dataset comparison
+    │   ├── csv_funs.py             # Extract datasets from input CSV files
+    │   ├── json_funs.py            # Read/write JSON files in output folder (debugging)
+    │   ├── normalization.py        # Dataset normalization functions
+    │   └── pub_funs.py             # Dataset extraction functions
+    │
+    ├── input/                      # Input CSV files
+    │   ├── AL_placeholder.csv      # Author List CSV file structure
+    │   └── PfIR_placeholder.csv    # Products from Institutional Repository CSV file structure
+    │
+    ├── output/                     # Output XLSX files
+    ├── AUTHORS.md                  # Contributors and roles
+    ├── config.py                   # Global variables
+    ├── LICENCE.md                  # License information
+    ├── main.py                     # Executable Python script
+    └── README.md                   # Project overview
 
 ## Installation
 Instructions to install required libraries.
@@ -53,3 +53,4 @@ GNU LESSER GENERAL PUBLIC LICENSE
 
 ## Acknowledgments
 ...
+
