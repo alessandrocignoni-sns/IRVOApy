@@ -20,10 +20,13 @@ def apply_style(sheet):
     sheet.auto_filter.ref = sheet.dimensions # add filters
 
 # write tabular data into a xslx sheet, procedure
-def write_sheet(sheet, dataset, flag_matches=False):
+def write_sheet(sheet, dataset, flag_matches=''):
     if dataset != []:
-        if flag_matches:
-            headers = ['IR_id', 'OA_id', 'Confidence', 'matched_fields', 'matched_length']
+        if flag_matches != '':
+            if re.match(r"^PfIR", flag_matches):
+                headers = ['IR_id', 'OA_id', 'Confidence', 'matched_fields', 'matched_length']
+            else:
+                headers = ['OA_id', 'IR_id', 'Confidence', 'matched_fields', 'matched_length']
             sheet.append(headers)
             for row1 in dataset:
                 fields_string = '; '.join(row1[3])
@@ -109,11 +112,11 @@ def analysis_in_xslx(ds1, ds1_unique, ds1_duplicates, ds1_name, ds2, ds2_unique,
     if matches1_2 != [] and matches2_1 != []: # matches sheet
         ws_ds1_d_name = f"{ds1_name}_duplicates" # duplicates element sheets
         ws_ds1_d = wb.create_sheet(ws_ds1_d_name) 
-        write_sheet(ws_ds1_d, ds1_duplicates, True)
+        write_sheet(ws_ds1_d, ds1_duplicates, ws_ds1_d_name)
         apply_style(ws_ds1_d)
         ws_ds2_d_name = f"{ds2_name}_duplicates"
         ws_ds2_d = wb.create_sheet(ws_ds2_d_name)
-        write_sheet(ws_ds2_d, ds2_duplicates, True)
+        write_sheet(ws_ds2_d, ds2_duplicates, ws_ds2_d_name)
         apply_style(ws_ds2_d)
 
         ws_matches_name = f"matches_{ds1_name}_vs_{ds2_name}"
