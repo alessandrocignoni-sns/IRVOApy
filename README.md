@@ -35,6 +35,7 @@ Institutional Repository Vs OpenAIRE py (IRVOApy) is a Python3 script to collect
 
 ## Installation
 Instructions to install required libraries.
+Keep in mind that request 2.32.5 and openpyxl 3.1.5 were used.
 
     $ python -m pip install requests
     $ python -m pip install openpyxl
