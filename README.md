@@ -51,6 +51,13 @@ How to run project:
 ## License
 GNU LESSER GENERAL PUBLIC LICENSE
 
+## Related works
+- Cignoni, A., Marotta, D., & Tamagno, D. (2026). IRVOApy: script input and output [Data set]. Zenodo. DOI: [10.5281/zenodo.18716059](https://doi.org/10.5281/zenodo.18716059)
+- Cignoni, A., Marotta, D., & Tamagno, D. (2026, June 3). Comparing Institutional Repository and OpenAIRE Research Products. Scuola Normale Superiore Case Study. EUNIS 2026, Timișoara (Romania). Zenodo. DOI: [10.5281/zenodo.20406388](https://doi.org/10.5281/zenodo.20406388)
+- Cignoni, A., Marotta, D., & Tamagno, D. (2026). "Comparing Institutional Repository and OpenAIRE Research Products. Scuola Normale Superiore Case Study" in: L. Desnos, C. Diaz, J. Mincer-Daszkiewicz, L. Merakos, R. Vogl, S. McLellan and U. Lucke (eds.), EUNIS 2026 (EPiC Series in Computing, vol. 109), pp. 172–183. DOI: [10.29007/gfwt](https://doi.org/10.29007/gfwt)
+
+
+
 ## Acknowledgments
-...
+The authors would like to thank Giulia Malaguarnera, Stefania Amodeo, and Miriam Baglioni, from OpenAIRE, for their valuable support and for providing clarifications on how the OpenAIRE Graph collects and structures data.
 
